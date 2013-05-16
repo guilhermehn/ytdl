@@ -1,0 +1,3 @@
+#!/bin/sh
+template='/home/'$USER'/Downloads/%(title)s.%(ext)s'
+youtube-dl -o $template -x --audio-format mp3 --no-continue --audio-quality 0 "$1"
